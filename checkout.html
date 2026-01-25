@@ -422,35 +422,31 @@
     </main>
 
     <script src="product.js"></script>
-    <script>
-  const form = document.getElementById("checkoutForm");
-  const payNowBtn = document.getElementById("payNowBtn");
-  const redirectMsg = document.getElementById("redirectMsg");
+   <script>
+      const form = document.getElementById("checkoutForm");
+      const payNowBtn = document.getElementById("payNowBtn");
+      const redirectMsg = document.getElementById("redirectMsg");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+       
 
-    // Tumhara real UPI ID
-    const upiId = "dongaremayuri007@oksbi";
-    const payeeName = "DeskZen";
-    const note = "DeskZen Premium Laptop Stand";
-    const amount = "1"; // INR
+        // Basic front-end validation is already handled by HTML attributes.
+        // You can optionally log form data to console for debugging only (no backend).
+        // console.log(Object.fromEntries(new FormData(form)));
 
-    const upiUrl =
-      "upi://pay" +
-      "?pa=" + encodeURIComponent(upiId) +
-      "&pn=" + encodeURIComponent(payeeName) +
-      "&tn=" + encodeURIComponent(note) +
-      "&am=" + encodeURIComponent(amount) +
-      "&cu=INR";
+        if (!productData || !productData.paymentLink) {
+          alert("Payment link is not configured. Please try again later.");
+          return;
+        }
 
-    payNowBtn.disabled = true;
-    redirectMsg.classList.remove("hidden");
+        payNowBtn.disabled = true;
+        redirectMsg.classList.remove("hidden");
 
-    // Mobile par UPI apps (GPay / PhonePe / Paytm) open honge
-    window.location.href = upiUrl;
-  });
-</script>
+        // Redirect to Razorpay / Stripe / Cashfree hosted payment page
+        window.location.href = productData.paymentLink;
+      });
+    </script>
 
   </body>
 </html>

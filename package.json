@@ -1,8 +1,8 @@
 {
+  "name": "deskzen-backend",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
-    "cors": "^2.8.6",
-    "crypto": "^1.0.1",
-    "express": "^5.2.1",
-    "razorpay": "^2.9.6"
+    "razorpay": "^2.9.4"
   }
 }

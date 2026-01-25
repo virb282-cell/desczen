@@ -210,29 +210,251 @@
     </main>
 
     <script src="product.js"></script>
+    <!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Checkout – DeskZen Premium Laptop Stand</title>
+    <meta
+      name="description"
+      content="Premium Stainless Steel 360° Rotating Laptop Stand" />
+
+    <!-- Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        --color-brand: #2563eb;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      
+    </style>
+  </head>
+  <body class="font-sans antialiased bg-slate-50 text-slate-900">
+    <header class="border-b border-slate-100 bg-white">
+      <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm">
+            D
+          </div>
+          <span class="text-lg font-semibold tracking-tight">
+            DeskZen
+          </span>
+        </a>
+        <a href="index.html" class="text-xs text-slate-500 hover:text-blue-700">
+          ← Back to product
+        </a>
+      </div>
+    </header>
+
+    <main class="min-h-screen">
+      <section class="max-w-4xl mx-auto px-4 py-8 md:py-12 grid md:grid-cols-[1.1fr,0.9fr] gap-8">
+        <!-- Form -->
+        <div class="rounded-2xl border border-slate-100 bg-white shadow-sm p-6 md:p-7">
+          <h1 class="text-xl md:text-2xl font-semibold tracking-tight mb-1">
+            Shipping details
+          </h1>
+          <p class="text-sm text-slate-600 mb-6">
+            Enter your delivery information to complete your order. Prepaid only – no Cash on Delivery.
+          </p>
+
+          <form id="checkoutForm" class="space-y-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-700 mb-1">
+                Full Name
+              </label>
+              <input
+                type="text"
+                name="fullName"
+                required
+                class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">
+                  Mobile Number
+                </label>
+                <input
+                  type="tel"
+                  name="mobile"
+                  pattern="[0-9]{10}"
+                  required
+                  placeholder="10-digit number"
+                  class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-700 mb-1">
+                Address
+              </label>
+              <textarea
+                name="address"
+                rows="3"
+                required
+                class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-4">
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">
+                  City
+                </label>
+                <input
+                  type="text"
+                  name="city"
+                  required
+                  class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">
+                  State
+                </label>
+                <input
+                  type="text"
+                  name="state"
+                  required
+                  class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+              </div>
+              <div>
+                <label class="block text-xs font-medium text-slate-700 mb-1">
+                  Pincode
+                </label>
+                <input
+                  type="text"
+                  name="pincode"
+                  pattern="[0-9]{6}"
+                  required
+                  placeholder="6-digit"
+                  class="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500" />
+              </div>
+            </div>
+
+            <p class="text-[11px] text-slate-500 mt-2">
+              By continuing, you agree to our Terms & Conditions and Privacy Policy. This is a prepaid online payment – no COD available.
+            </p>
+
+            <button
+              id="payNowBtn"
+              type="submit"
+              class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition disabled:opacity-60 disabled:cursor-not-allowed">
+              Pay Now Securely
+            </button>
+
+            <p
+              id="redirectMsg"
+              class="mt-2 text-[11px] text-slate-500 hidden">
+              Redirecting to secure payment page…
+            </p>
+          </form>
+        </div>
+
+        <!-- Order Summary -->
+        <aside class="rounded-2xl border border-slate-100 bg-white shadow-sm p-6 md:p-7 h-max">
+          <h2 class="text-base font-semibold text-slate-900 mb-4">
+            Order summary
+          </h2>
+          <div class="flex items-start gap-3 mb-4">
+            <img
+              src="ls.jpg"
+              loading="lazy"
+              alt="Premium Stainless Steel 360° Rotating Laptop Stand"
+              class="h-20 w-20 rounded-xl border border-slate-100 object-cover bg-slate-50" />
+            <div class="flex-1">
+              <p class="text-sm font-medium text-slate-900">
+                DeskZen Premium Laptop Stand
+              </p>
+              <p class="text-xs text-slate-500 mt-1">
+                Quantity: 1 • Color: Grey
+              </p>
+            </div>
+          </div>
+          <dl class="space-y-2 text-sm text-slate-700">
+            <div class="flex justify-between">
+              <dt>Price</dt>
+              <dd>₹199</dd>
+            </div>
+            <div class="flex justify-between">
+              <dt>Shipping</dt>
+              <dd class="text-emerald-600 font-medium">Free</dd>
+            </div>
+            <div class="border-t border-slate-100 pt-2 mt-2 flex justify-between font-semibold text-slate-900">
+              <dt>Total</dt>
+              <dd>₹199</dd>
+            </div>
+          </dl>
+          <p class="mt-3 text-[11px] text-slate-500">
+            Payments are processed via secure gateways like Razorpay. You will see the final amount and payment options on the hosted checkout page.
+          </p>
+        </aside>
+      </section>
+    </main>
+
+    <script src="product.js"></script>
     <script>
-      const form = document.getElementById("checkoutForm");
-      const payNowBtn = document.getElementById("payNowBtn");
-      const redirectMsg = document.getElementById("redirectMsg");
+  const form = document.getElementById("checkoutForm");
+  const payNowBtn = document.getElementById("payNowBtn");
+  const redirectMsg = document.getElementById("redirectMsg");
 
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        // Basic front-end validation is already handled by HTML attributes.
-        // You can optionally log form data to console for debugging only (no backend).
-        // console.log(Object.fromEntries(new FormData(form)));
+    // Tumhara real UPI ID
+    const upiId = "virajbhoir60@okhdfcbank";
+    const payeeName = "DeskZen";
+    const note = "DeskZen Premium Laptop Stand";
+    const amount = "1"; // INR
 
-        if (!productData || !productData.paymentLink) {
-          alert("Payment link is not configured. Please try again later.");
-          return;
-        }
+    const upiUrl =
+      "upi://pay" +
+      "?pa=" + encodeURIComponent(upiId) +
+      "&pn=" + encodeURIComponent(payeeName) +
+      "&tn=" + encodeURIComponent(note) +
+      "&am=" + encodeURIComponent(amount) +
+      "&cu=INR";
 
-        payNowBtn.disabled = true;
-        redirectMsg.classList.remove("hidden");
+    payNowBtn.disabled = true;
+    redirectMsg.classList.remove("hidden");
 
-        // Redirect to Razorpay / Stripe / Cashfree hosted payment page
-        window.location.href = productData.paymentLink;
-      });
-    </script>
+    // Mobile par UPI apps (GPay / PhonePe / Paytm) open honge
+    window.location.href = upiUrl;
+  });
+</script>
+
   </body>
 </html>
+
+  </body>
+</html>
+

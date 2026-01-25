@@ -21,6 +21,7 @@ const productData = {
     "Supports laptops up to 15.6 / 17 inches (adjust as per your spec) without wobbling."
   ],
   
-  paymentLink: "https://rzp.io/rzp/bPip8tW"
+
 };
+
 

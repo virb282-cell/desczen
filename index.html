@@ -1,0 +1,639 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>
+     Premium Stainless Steel 360° Rotating Laptop Stand
+    </title>
+    <meta
+      name="description"
+      content="Upgrade your workspace with this premium stainless-steel laptop stand designed for comfort, stability, and flexibility. With 360° rotation, adjustable height, and a foldable portable design, it’s perfect for office, home, and travel use." />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DeskZen Premium Laptop Stand" />
+    <meta
+      property="og:description"
+      content="This 360-degree rotating stainless steel laptop stand is designed for professionals, students, and creators who want comfort and efficiency in their daily work." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:image" content="https://yourdomain.com/images/lamp-main.jpg" />
+
+    <!-- Fonts -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        --color-brand: #2563eb;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      .fade-up {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+      }
+      .fade-up.in-view {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="font-sans antialiased bg-white text-slate-900">
+    <!-- Header -->
+    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-slate-100">
+      <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-sm">
+            F
+          </div>
+          <span class="text-lg font-semibold tracking-tight">
+            DeskZen
+          </span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+          <a href="#home" class="hover:text-blue-600">Home</a>
+          <a href="#features" class="hover:text-blue-600">Features</a>
+          <a href="#reviews" class="hover:text-blue-600">Reviews</a>
+          <a href="#contact" class="hover:text-blue-600">Contact</a>
+          <a
+            href="checkout.html"
+            class="ml-4 inline-flex items-center rounded-full bg-blue-600 px-4 py-1.5 text-white text-sm hover:bg-blue-700 transition">
+            Buy Now
+          </a>
+        </nav>
+
+        <!-- Mobile Nav Toggle -->
+        <button
+          id="menuToggle"
+          class="md:hidden inline-flex items-center justify-center h-9 w-9 rounded-full border border-slate-200">
+          <span class="sr-only">Toggle navigation</span>
+          <svg
+            id="menuIconOpen"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg
+            id="menuIconClose"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5 hidden"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav
+        id="mobileNav"
+        class="md:hidden max-h-0 overflow-hidden transition-all duration-200 border-t border-slate-100 bg-white">
+        <div class="px-4 py-3 flex flex-col gap-3 text-sm font-medium text-slate-700">
+          <a href="#home" class="py-1">Home</a>
+          <a href="#features" class="py-1">Features</a>
+          <a href="#reviews" class="py-1">Reviews</a>
+          <a href="#contact" class="py-1">Contact</a>
+          <a
+            href="checkout.html"
+            class="mt-1 inline-flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-white text-sm hover:bg-blue-700 transition">
+            Buy Now
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <!-- Hero -->
+      <section class="bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 py-10 md:py-16 lg:py-20 grid md:grid-cols-2 gap-10 items-center">
+          <!-- Text -->
+          <div class="space-y-6 fade-up">
+            <div class="inline-flex items-center gap-2 rounded-full bg-blue-50 px-3 py-1 text-xs font-medium text-blue-700">
+              <span class="h-1.5 w-1.5 rounded-full bg-blue-600"></span>
+              Limited Stock Available
+            </div>
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">
+              Premium Stainless Steel 360° Rotating Laptop Stand
+            </h1>
+            <p class="text-slate-600 text-base md:text-lg max-w-xl">
+              Upgrade your workspace with this premium stainless-steel laptop stand designed for comfort, stability, and flexibility. With 360° rotation, adjustable height, and a foldable portable design, it’s perfect for office, home, and travel use.
+            </p>
+
+            <div class="space-y-2">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-semibold tracking-tight text-slate-900">
+                  ₹199
+                </span>
+                <span class="text-sm text-slate-500">Inclusive of all taxes</span>
+              </div>
+              <p class="text-xs text-slate-500">
+                Ships within 2-3 Days across India.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                href="checkout.html"
+                class="inline-flex items-center justify-center rounded-full bg-blue-600 px-6 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-blue-700 transition">
+                Buy Now
+              </a>
+              <a
+                href="#description"
+                class="text-sm font-medium text-blue-700 hover:text-blue-800">
+                View Details
+              </a>
+            </div>
+
+            <div class="flex items-center gap-6 text-xs text-slate-500">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100">
+                  💡
+                </span>
+                <span>stainless-steel</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100">
+                  🚚
+                </span>
+                <span>Free Delivery</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-slate-100">
+                  🚚
+                </span>
+                <span>Pan-India delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image -->
+          <div class="fade-up md:justify-self-end">
+            <div class="relative">
+              <div class="absolute inset-0 scale-110 blur-3xl bg-gradient-to-tr from-blue-100 via-slate-50 to-blue-50 -z-10"></div>
+              <img
+                src="ls.jpg"
+                loading="lazy"
+                alt="Premium Stainless Steel 360° Rotating Laptop Stand"
+                class="w-full max-w-md mx-auto rounded-3xl shadow-lg border border-slate-100 bg-white" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section id="features" class="py-12 md:py-16">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="text-center max-w-2xl mx-auto mb-10 fade-up">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight">
+             ⭐ Key Features
+            </h2>
+            <p class="mt-3 text-slate-600">
+              
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Feature cards (static; product.js holds the same text logically) -->
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                360° Smooth Rotation
+              </h3>
+              <p class="text-sm text-slate-600">
+                Rotate your laptop effortlessly for presentations, collaboration, or easy screen sharing.
+              </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                Premium Stainless Steel Body
+              </h3>
+              <p class="text-sm text-slate-600">
+                Made from high-quality stainless steel for superior strength, durability, and a premium look.
+              </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                Ergonomic Height Adjustment
+              </h3>
+              <p class="text-sm text-slate-600">
+                Raises your laptop to eye level, helping reduce neck, back, and shoulder strain.
+              </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                Foldable & Portable Design
+              </h3>
+              <p class="text-sm text-slate-600">
+                Compact, foldable structure makes it easy to carry in a bag or store when not in use.
+              </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                Anti-Slip Silicone Pads
+              </h3>
+              <p class="text-sm text-slate-600">
+                Non-slip silicone grips on arms and base prevent scratches and keep your laptop secure.
+              </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                Strong & Stable Support
+              </h3>
+              <p class="text-sm text-slate-600">
+                Supports laptops up to 15.6 / 17 inches (adjust as per your spec) without wobbling.
+              </p>
+            </div>
+            <div class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="h-10 w-10 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-3">
+                ✅
+              </div>
+              <h3 class="font-semibold mb-1 text-slate-900">
+                Heat Dissipation Design
+              </h3>
+              <p class="text-sm text-slate-600">
+                Open structure improves airflow, keeping your laptop cool during long use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Description -->
+      <section
+        id="description"
+        class="py-12 md:py-16 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 fade-up">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-4">
+            Why DeskZen for your workspace?
+          </h2>
+          <p class="text-slate-600 mb-3">
+            This 360-degree rotating stainless steel laptop stand is designed for professionals, students, and creators who want comfort and efficiency in their daily work.
+          </p>
+          <p class="text-slate-600 mb-3">
+            Its heavy-duty stainless steel construction ensures long-lasting durability, while the multi-angle adjustable arms allow you to customize height and viewing angle easily. Whether you’re working, attending online meetings, coding, or watching videos, this stand helps maintain a healthy posture.
+          </p>
+          <p class="text-slate-600">
+            The smooth rotation base makes it perfect for shared workspaces, presentations, and multitasking setups. With anti-slip silicone pads, your laptop stays safe and scratch-free on any surface.
+          </p>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section class="py-12 md:py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="max-w-3xl mb-8 fade-up">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+              🧑‍💻 Ideal For
+            </h2>
+            
+          </div>
+          <div class="grid md:grid-cols-4 gap-6">
+            <div class="fade-up">
+              <div class="text-xs font-semibold text-slate-500 mb-1">
+                 1
+              </div>
+              <h3 class="font-semibold text-slate-900 mb-1">
+                Office professionals 
+              </h3>
+            </div>
+            <div class="fade-up">
+              <div class="text-xs font-semibold text-slate-500 mb-1">
+                 2
+              </div>
+              <h3 class="font-semibold text-slate-900 mb-1">
+                Work-from-home users
+              </h3>
+            </div>
+            <div class="fade-up">
+              <div class="text-xs font-semibold text-slate-500 mb-1">
+                 3
+              </div>
+              <h3 class="font-semibold text-slate-900 mb-1">
+                Programmers & designers
+              </h3>
+            </div>
+            <div class="fade-up">
+              <div class="text-xs font-semibold text-slate-500 mb-1">
+                 4
+              </div>
+              <h3 class="font-semibold text-slate-900 mb-1">
+                Students & online classes
+              </h3>
+            </div>
+            <div class="fade-up">
+              <div class="text-xs font-semibold text-slate-500 mb-1">
+                 5
+              </div>
+              <h3 class="font-semibold text-slate-900 mb-1">
+                Content creators
+              </h3>
+            </div>
+            <div class="fade-up">
+              <div class="text-xs font-semibold text-slate-500 mb-1">
+                 6
+              </div>
+              <h3 class="font-semibold text-slate-900 mb-1">
+                Video meetings & presentations
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section
+        id="reviews"
+        class="py-12 md:py-16">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 fade-up">
+            <div>
+              <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-2">
+                Loved by DeskZen-driven professionals
+              </h2>
+              <p class="text-slate-600">
+                Real experiences from customers who upgraded their workspace lighting.
+              </p>
+            </div>
+            <div class="text-sm text-slate-600">
+              ★★★★☆ 4.8/5 average rating
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-3 gap-6">
+            <article class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-slate-900">
+                  Amit Deshmukh.
+                </h3>
+                <span class="text-xs text-slate-500">
+                  Mumbai
+                </span>
+              </div>
+              <div class="text-xs text-amber-500 mb-2">★★★★★</div>
+              <p class="text-sm text-slate-600">
+                Worth every penny! This stand is solid, stylish, and super smooth to rotate. I can now share my screen with ease during meetings. Great improvement for my work-from-home setup.
+              </p>
+            </article>
+
+            <article class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-slate-900">
+                  Neha Shetty.
+                </h3>
+                <span class="text-xs text-slate-500">
+                  Bengaluru
+                </span>
+              </div>
+              <div class="text-xs text-amber-500 mb-2">★★★★☆</div>
+              <p class="text-sm text-slate-600">
+                Absolutely love it! The stainless steel feels premium, and the anti-slip pads keep my laptop secure. Setup was instant, and it feels so sturdy. Neck pain has reduced dramatically.
+              </p>
+            </article>
+
+            <article class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-slate-900">
+                  Arjun Sharma.
+                </h3>
+                <span class="text-xs text-slate-500">
+                  Delhi
+                </span>
+              </div>
+              <div class="text-xs text-amber-500 mb-2">★★★★★</div>
+              <p class="text-sm text-slate-600">
+                Best laptop stand I’ve bought in years. Height adjustable, folds flat, and looks great on my desk. My laptop stays cool even on long sessions. Highly recommend.
+              </p>
+            </article>
+            <article class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-slate-900">
+                  Indar Joshi.
+                </h3>
+                <span class="text-xs text-slate-500">
+                  Mumbai
+                </span>
+              </div>
+              <div class="text-xs text-amber-500 mb-2">★★★★★</div>
+              <p class="text-sm text-slate-600">
+                Perfect for presentations — the 360° rotation makes it super easy to show my work to clients. Sturdy and great quality. Will buy again for my other office.
+              </p>
+            </article>
+            <article class="p-6 rounded-2xl border border-slate-100 bg-white shadow-sm fade-up">
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-semibold text-slate-900">
+                  Priyanka Pawar.
+                </h3>
+                <span class="text-xs text-slate-500">
+                  Pune
+                </span>
+              </div>
+              <div class="text-xs text-amber-500 mb-2">★★★★★</div>
+              <p class="text-sm text-slate-600">
+                Great value for a high quality stand. Only thing I’d love is an option with color accents, but performance is excellent.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust / Guarantee -->
+      <section class="py-12 md:py-16 bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8 items-start">
+          <div class="fade-up">
+            <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+              Your purchase is protected
+            </h2>
+            <p class="text-slate-600">
+              We take product quality and your experience seriously. Every unit is tested before dispatch.
+            </p>
+          </div>
+
+          <div class="space-y-4 fade-up">
+            <div class="flex items-start gap-3">
+              <div class="h-9 w-9 rounded-full bg-green-50 flex items-center justify-center text-green-600">
+                🔒
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">
+                  Secure online payments
+                </h3>
+                <p class="text-sm text-slate-600">
+                  All payments are processed via trusted gateways like Razorpay / Stripe / Cashfree. No card details are stored on this website.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="h-9 w-9 rounded-full bg-amber-50 flex items-center justify-center text-amber-600">
+                ↩️
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">
+                  Refund & replacement
+                </h3>
+                <p class="text-sm text-slate-600">
+                  7-day replacement for manufacturing defects and damaged deliveries. For other issues, our support team will help you case by case.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="h-9 w-9 rounded-full bg-blue-50 flex items-center justify-center text-blue-600">
+                📦
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">
+                  Fast dispatch
+                </h3>
+                <p class="text-sm text-slate-600">
+                  Orders are typically packed and shipped within 2 to 3 days from our warehouse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            id="contact"
+            class="space-y-3 fade-up">
+            <h3 class="font-semibold text-slate-900">
+              Support & contact
+            </h3>
+            <p class="text-sm text-slate-600">
+              Have a question about your order or product? Reach out anytime.
+            </p>
+            <div class="space-y-1 text-sm text-slate-700">
+              <p>Email: <a href="mailto:support@focusfuel.in" class="text-blue-700 hover:text-blue-800">deskzensupport@gmail.com</a></p>
+              <p>WhatsApp: <a href="tel:+919876543210" class="text-blue-700 hover:text-blue-800">+91-98765-43210</a></p>
+              <p>Location: Mumbai, India</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="py-12 md:py-16">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-up">
+          <h2 class="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
+            Designed for Comfort. Built in Steel.
+          </h2>
+          <p class="text-slate-600 mb-4">
+            One Laptop Stand – designed to support deep focus, learning and creativity.
+          </p>
+          <div class="flex flex-col items-center gap-2 mb-4">
+            <span class="text-3xl font-semibold tracking-tight text-slate-900">
+              ₹199
+            </span>
+            <span class="text-xs text-slate-500">
+              Prepaid only • No Cash on Delivery
+            </span>
+          </div>
+          <a
+            href="checkout.html"
+            class="inline-flex items-center justify-center rounded-full bg-blue-600 px-8 py-3 text-sm font-medium text-white shadow-md hover:bg-blue-700 transition">
+            Buy Now
+          </a>
+          <p class="mt-3 text-xs text-slate-500">
+            Secure online payment via Razorpay. You will be redirected to a secure hosted checkout page.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-100 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row items-center justify-between gap-3 text-xs text-slate-600">
+        <p>
+          © 2026 DeskZen Labs Pvt. Ltd. All rights reserved.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-blue-700">Privacy Policy</a>
+          <a href="#" class="hover:text-blue-700">Terms & Conditions</a>
+          <a href="mailto:support@focusfuel.in" class="hover:text-blue-700">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Shared JS (menu + animations) -->
+    <script src="product.js"></script>
+    <script>
+      // Mobile nav toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const mobileNav = document.getElementById("mobileNav");
+      const iconOpen = document.getElementById("menuIconOpen");
+      const iconClose = document.getElementById("menuIconClose");
+
+      if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+          if (mobileNav.style.maxHeight) {
+            mobileNav.style.maxHeight = null;
+            iconOpen.classList.remove("hidden");
+            iconClose.classList.add("hidden");
+          } else {
+            mobileNav.style.maxHeight = mobileNav.scrollHeight + "px";
+            iconOpen.classList.add("hidden");
+            iconClose.classList.remove("hidden");
+          }
+        });
+      }
+
+      // Simple scroll-in animations
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in-view");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+
+      document.querySelectorAll(".fade-up").forEach((el) => observer.observe(el));
+    </script>
+
+    <!-- Deployment note (optional comment for reference)
+    To deploy on Netlify or Vercel, simply upload this folder as a static site. No build step is needed.
+    -->
+  </body>
+</html>
